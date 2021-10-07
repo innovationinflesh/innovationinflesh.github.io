@@ -1,0 +1,210 @@
+
+body,
+html {
+    font-family: "Lekton", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #777;
+    line-height: 26px;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: -0.2px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Abel", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+h1 {
+    text-transform: uppercase;
+}
+h2 {
+    text-transform: uppercase;
+    line-height: 20px;
+    margin: 0;
+}
+h3 {
+    font-size: 18px;
+    font-weight: 900;
+}
+h4 {
+    text-transform: uppercase;
+}
+h5 {
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 20px;
+}
+a {
+    color: #222;
+}
+a:hover,
+a:focus {
+    text-decoration: none;
+    outline: none;
+    color: #333;
+}
+mark {
+    background-color: #FEF7A4;
+    padding: 0.1em;
+}
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.clearfix {
+    display: inline-block;
+}
+* html .clearfix {
+    height: 1%;
+}
+.clearfix {
+    display: block;
+}
+ul,
+ol {
+    padding: 0;
+}
+::selection {
+    background: #FEF7A4;
+    /* Safari */
+    
+    color: #333;
+}
+::-moz-selection {
+    background: #FEF7A4;
+    /* Firefox */
+    
+    color: #333;
+}
+/* Preloader */
+
+.preloader {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background: #FFFFFF;
+}
+.loader {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    margin: -30px 0 0 -30px;
+    background: rgba(13, 13, 13, 0.5);
+    -webkit-animation: loader-anim 1.5s infinite;
+    animation: loader-anim 1.5s infinite;
+}
+@-webkit-keyframes loader-anim {
+    0% {
+        -webkit-transform: scale(0);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(1);
+    }
+}
+@keyframes loader-anim {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+/* 4. Section Home
+-------------------------------------------------*/
+
+#home {
+    background: url(../img/header.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #FFFAFA;
+}
+#home h1 {
+    font-size: 58px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 10px;
+    font-weight: 900;
+    margin-bottom: 28px;
+}
+#home h1 span{
+    background-color: #030303;
+    padding: 0.1em;
+}
+#home h1 mark{
+    color: #030303;
+}
+#home p.lead {
+    color: #030303;
+    font-size: 18px;
+}
+#home .content hr {
+    background-color: #666;
+    height: 2px;
+    border: 0 none;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    width: 100px;
+}
+.content {
+    position: relative;
+    padding: 19% 0 15%;
+}
+
+div .social-media {
+    background-color: #FEF7A4;
+    border: #FEF7A4 1px solid;
+    padding: 6px;
+    float: none;
+    margin: 0 auto;
+}
+
+.icon-3x {
+    font-size: 2.5em;
+}
+
+/* 15. Media Queries For Responsive Design
+-------------------------------------------------*/
+
+@media (max-width: 992px) {
+    .content {
+        padding: 19% 0 20%;
+    }
+    #home h1 {
+        font-size: 55px;
+    }
+}
+@media (max-width: 768px) {
+    .content {
+        padding: 24% 0 25%;
+    }
+    #home h1 {
+        font-size: 50px;
+    }
+}
+@media (max-width: 603px) {
+    #home h1 {
+        font-size: 35px;
+    }
+    #home p.lead {
+        font-size: 15px;
+    }
+}
